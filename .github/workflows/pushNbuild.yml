@@ -16,5 +16,5 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
           npm install
-          ng build
+          npm run build
           npx netlify-cli deploy --prod --dir=dist
